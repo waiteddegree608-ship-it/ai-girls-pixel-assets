@@ -1,0 +1,2104 @@
+{
+  "version": 1,
+  "source": {
+    "repository": "https://github.com/waiteddegree608-ship-it/cet6-translation-runner",
+    "revision": "69713d795851ccf9b813a908f5f219e1ed9267f1"
+  },
+  "coordinates": "像素坐标从单帧左上角起算。帧编号从 0 开始，逐行从左往右。sequences 的 start 和 count 分别为起始帧和帧数。registration.anchor 是绘制时的定位点；seated 中的 grips 按帧给出前后两个握持点，空值表示该帧没有握点。",
+  "characters": [
+    {
+      "id": "gpt",
+      "name": "GPT",
+      "rights": "ZipZipPipe-attribution-noncommercial",
+      "assets": [
+        {
+          "id": "portrait",
+          "label": "对话头像",
+          "path": "characters/gpt/portrait.webp",
+          "width": 318,
+          "height": 314,
+          "layout": {
+            "columns": 1,
+            "rows": 1,
+            "frameWidth": 318,
+            "frameHeight": 314
+          },
+          "source": "assets/art/cast-art-gpt-79b26a8.webp",
+          "sha256": "79b26a8cfe551e61da1f2a8037ca905ac50f164b3cae9d84394f1ae86094558f"
+        },
+        {
+          "id": "cast",
+          "label": "旅伴基础立绘",
+          "path": "characters/gpt/cast.webp",
+          "width": 228,
+          "height": 240,
+          "layout": {
+            "columns": 1,
+            "rows": 1,
+            "frameWidth": 228,
+            "frameHeight": 240
+          },
+          "source": "assets/art/cast-art-gpt-c0a95e6.webp",
+          "sha256": "c0a95e619b9edd496164e98037623aa80cf556535e32936f0cad0baaba1b9ff3"
+        },
+        {
+          "id": "standing",
+          "label": "图鉴站姿",
+          "path": "characters/gpt/standing.webp",
+          "width": 206,
+          "height": 239,
+          "layout": {
+            "columns": 1,
+            "rows": 1,
+            "frameWidth": 206,
+            "frameHeight": 239
+          },
+          "source": "assets/art/cast-art-gpt-d225c74.webp",
+          "sha256": "d225c74e7aec951789f97a0511d52f46ac76b5dace2e4ef25ecdcea683848436"
+        },
+        {
+          "id": "run",
+          "label": "跑步循环",
+          "path": "characters/gpt/run.webp",
+          "width": 2048,
+          "height": 200,
+          "layout": {
+            "columns": 8,
+            "rows": 1,
+            "frameWidth": 256,
+            "frameHeight": 200
+          },
+          "sequences": [
+            {
+              "id": "run",
+              "start": 0,
+              "count": 8
+            }
+          ],
+          "registration": {
+            "anchor": [
+              128,
+              184
+            ]
+          },
+          "source": "assets/art/run-animation-gpt-a27e689.webp",
+          "sha256": "a27e6891457958288c913a5662dc17ed83b80693861c87198907f6cd47c27b65"
+        },
+        {
+          "id": "seated",
+          "label": "划船与乘车",
+          "path": "characters/gpt/seated.webp",
+          "width": 1920,
+          "height": 144,
+          "layout": {
+            "columns": 10,
+            "rows": 1,
+            "frameWidth": 192,
+            "frameHeight": 144
+          },
+          "sequences": [
+            {
+              "id": "row",
+              "start": 0,
+              "count": 6
+            },
+            {
+              "id": "ride",
+              "start": 6,
+              "count": 4
+            }
+          ],
+          "registration": {
+            "anchor": [
+              88,
+              89
+            ],
+            "grips": [
+              {
+                "high": [
+                  134.59,
+                  53.24
+                ],
+                "low": [
+                  144.47,
+                  77.71
+                ]
+              },
+              {
+                "high": [
+                  125.18,
+                  47.12
+                ],
+                "low": [
+                  134.12,
+                  75.35
+                ]
+              },
+              {
+                "high": [
+                  119.06,
+                  45.71
+                ],
+                "low": [
+                  108.24,
+                  76.29
+                ]
+              },
+              {
+                "high": [
+                  109.18,
+                  35.82
+                ],
+                "low": [
+                  94.12,
+                  73.0
+                ]
+              },
+              {
+                "high": [
+                  113.41,
+                  42.88
+                ],
+                "low": [
+                  88.94,
+                  69.24
+                ]
+              },
+              {
+                "high": [
+                  122.82,
+                  51.35
+                ],
+                "low": [
+                  134.12,
+                  73.0
+                ]
+              },
+              {
+                "high": [
+                  114.75,
+                  57.35
+                ],
+                "low": [
+                  102.27,
+                  70.72
+                ]
+              },
+              {
+                "high": [
+                  121.88,
+                  52.44
+                ],
+                "low": [
+                  100.04,
+                  74.73
+                ]
+              },
+              {
+                "high": [
+                  115.64,
+                  52.44
+                ],
+                "low": [
+                  103.6,
+                  70.72
+                ]
+              },
+              {
+                "high": [
+                  116.09,
+                  58.68
+                ],
+                "low": [
+                  104.5,
+                  72.5
+                ]
+              }
+            ]
+          },
+          "usage": "ride 为驾驶动作",
+          "source": "assets/art/seated-animation-src-9e29b26.webp",
+          "sha256": "9e29b26fd11c1550d0cd3bfc1a060a6eeb3cdfc8f1f7253c8adbbd1a76f0a843"
+        },
+        {
+          "id": "action-slip",
+          "label": "失衡",
+          "path": "characters/gpt/action-slip.webp",
+          "width": 276,
+          "height": 226,
+          "layout": {
+            "columns": 1,
+            "rows": 1,
+            "frameWidth": 276,
+            "frameHeight": 226
+          },
+          "source": "assets/art/cast-art-slip-4874389.webp",
+          "sha256": "48743890db908c34fba7e8ce087f0dd5a859bcb954841ce6730f1802f4c5df2c"
+        },
+        {
+          "id": "action-vault",
+          "label": "翻越",
+          "path": "characters/gpt/action-vault.webp",
+          "width": 263,
+          "height": 204,
+          "layout": {
+            "columns": 1,
+            "rows": 1,
+            "frameWidth": 263,
+            "frameHeight": 204
+          },
+          "source": "assets/art/cast-art-vault-cc4ec1c.webp",
+          "sha256": "cc4ec1cac053df0ddebe7aaec05da7f37f9da73ec26ac5f7cdb57e3745ca9dbb"
+        },
+        {
+          "id": "action-recover",
+          "label": "重新站稳",
+          "path": "characters/gpt/action-recover.webp",
+          "width": 255,
+          "height": 212,
+          "layout": {
+            "columns": 1,
+            "rows": 1,
+            "frameWidth": 255,
+            "frameHeight": 212
+          },
+          "source": "assets/art/cast-art-recover-e5ea364.webp",
+          "sha256": "e5ea3649b6e4910510173c7b4e99c1e492b0abb6fc54acd5c697e4c302845e07"
+        },
+        {
+          "id": "action-slide",
+          "label": "滑铲",
+          "path": "characters/gpt/action-slide.webp",
+          "width": 297,
+          "height": 195,
+          "layout": {
+            "columns": 1,
+            "rows": 1,
+            "frameWidth": 297,
+            "frameHeight": 195
+          },
+          "source": "assets/art/cast-art-slide-d885de7.webp",
+          "sha256": "d885de76b1141848b41978c1ce3130dcebac69ec80130dacaba2cc3738f80e42"
+        },
+        {
+          "id": "action-jump",
+          "label": "跳跃",
+          "path": "characters/gpt/action-jump.webp",
+          "width": 186,
+          "height": 205,
+          "layout": {
+            "columns": 1,
+            "rows": 1,
+            "frameWidth": 186,
+            "frameHeight": 205
+          },
+          "source": "assets/art/cast-art-jump-e7fb572.webp",
+          "sha256": "e7fb572f3184a49c4dbafa6d1d1719b1f327ad926591cbd86919f5a680c3b5d3"
+        },
+        {
+          "id": "action-idle",
+          "label": "站立休息",
+          "path": "characters/gpt/action-idle.webp",
+          "width": 200,
+          "height": 273,
+          "layout": {
+            "columns": 1,
+            "rows": 1,
+            "frameWidth": 200,
+            "frameHeight": 273
+          },
+          "source": "assets/art/cast-art-idle-9d1d0d5.webp",
+          "sha256": "9d1d0d5bc17b6e6987707c2f492744e643f8524e1c21b03fcbd4fdd628ad0889"
+        },
+        {
+          "id": "flight-1",
+          "label": "飞行姿态 1",
+          "path": "characters/gpt/flight-1.webp",
+          "width": 269,
+          "height": 252,
+          "layout": {
+            "columns": 1,
+            "rows": 1,
+            "frameWidth": 269,
+            "frameHeight": 252
+          },
+          "source": "assets/art/cast-art-19-e9e9f23.webp",
+          "sha256": "e9e9f2351782f47b5aa9c0993f1405b456448196adcb2b90523dff02c0dd82e7"
+        },
+        {
+          "id": "flight-2",
+          "label": "飞行姿态 2",
+          "path": "characters/gpt/flight-2.webp",
+          "width": 302,
+          "height": 209,
+          "layout": {
+            "columns": 1,
+            "rows": 1,
+            "frameWidth": 302,
+            "frameHeight": 209
+          },
+          "source": "assets/art/cast-art-20-a4ad2ad.webp",
+          "sha256": "a4ad2ad9db6ea42ee14911be3d4e0b0026becf5c0bba566cd4f50511352cd088"
+        },
+        {
+          "id": "walk",
+          "label": "走向宝箱",
+          "path": "characters/gpt/walk.webp",
+          "width": 1024,
+          "height": 200,
+          "layout": {
+            "columns": 4,
+            "rows": 1,
+            "frameWidth": 256,
+            "frameHeight": 200
+          },
+          "sequences": [
+            {
+              "id": "heroWalk",
+              "start": 0,
+              "count": 4
+            }
+          ],
+          "registration": {
+            "anchor": [
+              128,
+              184
+            ]
+          },
+          "source": "assets/art/finish-animation-herowalk-32b9f6e.webp",
+          "sha256": "32b9f6e63e72bd2f7362ed8cfae88f2a259c0bd6de129c9f610384ea8451dc7c"
+        },
+        {
+          "id": "chest",
+          "label": "伸手开箱",
+          "path": "characters/gpt/chest.webp",
+          "width": 1536,
+          "height": 200,
+          "layout": {
+            "columns": 6,
+            "rows": 1,
+            "frameWidth": 256,
+            "frameHeight": 200
+          },
+          "sequences": [
+            {
+              "id": "reach",
+              "start": 0,
+              "count": 6
+            }
+          ],
+          "registration": {
+            "anchor": [
+              128,
+              184
+            ]
+          },
+          "source": "assets/art/finish-animation-reach-023f4fe.webp",
+          "sha256": "023f4fe6d8625a10ad137d93e909a258965ad65f7faf7e837112e046febdce81"
+        }
+      ]
+    },
+    {
+      "id": "deepseek",
+      "name": "DeepSeek",
+      "rights": "CC-BY-NC-SA-4.0",
+      "assets": [
+        {
+          "id": "portrait",
+          "label": "对话头像",
+          "path": "characters/deepseek/portrait.webp",
+          "width": 309,
+          "height": 315,
+          "layout": {
+            "columns": 1,
+            "rows": 1,
+            "frameWidth": 309,
+            "frameHeight": 315
+          },
+          "source": "assets/art/cast-art-deepseek-944a149.webp",
+          "sha256": "944a1493713c26a2b99e6759290420d2d020628daefebf6a80a074bce301c946"
+        },
+        {
+          "id": "cast",
+          "label": "旅伴基础立绘",
+          "path": "characters/deepseek/cast.webp",
+          "width": 213,
+          "height": 240,
+          "layout": {
+            "columns": 1,
+            "rows": 1,
+            "frameWidth": 213,
+            "frameHeight": 240
+          },
+          "source": "assets/art/cast-art-deepseek-6e82f9d.webp",
+          "sha256": "6e82f9ddfd045d84cc819ca10fb523f4c27643a523febfe8a35547379861ab2d"
+        },
+        {
+          "id": "standing",
+          "label": "图鉴站姿",
+          "path": "characters/deepseek/standing.webp",
+          "width": 199,
+          "height": 241,
+          "layout": {
+            "columns": 1,
+            "rows": 1,
+            "frameWidth": 199,
+            "frameHeight": 241
+          },
+          "source": "assets/art/cast-art-deepseek-97d29fa.webp",
+          "sha256": "97d29fa177c50ab000be23058394472df2d610ec95cf649a3bd08352cec92ae1"
+        },
+        {
+          "id": "run",
+          "label": "跑步循环",
+          "path": "characters/deepseek/run.webp",
+          "width": 2048,
+          "height": 200,
+          "layout": {
+            "columns": 8,
+            "rows": 1,
+            "frameWidth": 256,
+            "frameHeight": 200
+          },
+          "sequences": [
+            {
+              "id": "run",
+              "start": 0,
+              "count": 8
+            }
+          ],
+          "registration": {
+            "anchor": [
+              128,
+              184
+            ]
+          },
+          "source": "assets/art/run-animation-deepseek-21ca5ab.webp",
+          "sha256": "21ca5ab6a99b857822feb8a64f97245984896da0c1b1537879cd336d6b61e3af"
+        },
+        {
+          "id": "seated",
+          "label": "划船与乘车",
+          "path": "characters/deepseek/seated.webp",
+          "width": 1344,
+          "height": 144,
+          "layout": {
+            "columns": 7,
+            "rows": 1,
+            "frameWidth": 192,
+            "frameHeight": 144
+          },
+          "sequences": [
+            {
+              "id": "row",
+              "start": 0,
+              "count": 4
+            },
+            {
+              "id": "ride",
+              "start": 4,
+              "count": 3
+            }
+          ],
+          "registration": {
+            "anchor": [
+              88,
+              89
+            ],
+            "grips": [
+              {
+                "high": [
+                  100.71,
+                  55.66
+                ],
+                "low": [
+                  131.2,
+                  76.68
+                ]
+              },
+              {
+                "high": [
+                  124.71,
+                  65.91
+                ],
+                "low": [
+                  124.32,
+                  86.92
+                ]
+              },
+              {
+                "high": [
+                  121.34,
+                  54.36
+                ],
+                "low": [
+                  86.7,
+                  78.75
+                ]
+              },
+              {
+                "high": [
+                  124.97,
+                  49.04
+                ],
+                "low": [
+                  110.7,
+                  55.4
+                ]
+              },
+              null,
+              null,
+              null
+            ]
+          },
+          "usage": "ride 为乘客动作",
+          "source": "assets/art/seated-animation-src-1ec53e1.webp",
+          "sha256": "1ec53e1ed0739fd348c76a64d6705b0713646aaa115ece8e06723b5e2e0e8b95"
+        },
+        {
+          "id": "battle",
+          "label": "首领战姿态",
+          "path": "characters/deepseek/battle.webp",
+          "width": 864,
+          "height": 144,
+          "layout": {
+            "columns": 6,
+            "rows": 1,
+            "frameWidth": 144,
+            "frameHeight": 144
+          },
+          "usage": "战斗状态按招式选帧，非连续走帧动画；第 0 帧待机，第 5 帧用于破绽或落败。",
+          "source": "assets/art/boss-animation-deepseek-66d3c39.webp",
+          "sha256": "66d3c39ed39f708de8977294270f935aa76becb3c551f7796e9d3162da751aa9"
+        },
+        {
+          "id": "hud-portrait",
+          "label": "小尺寸战斗头像",
+          "path": "characters/deepseek/hud-portrait.webp",
+          "width": 43,
+          "height": 44,
+          "layout": {
+            "columns": 1,
+            "rows": 1,
+            "frameWidth": 43,
+            "frameHeight": 44
+          },
+          "source": "assets/art/interface-deepseek-f027dbf.webp",
+          "sha256": "f027dbf7bdace2ea523e680416f66176890955d083b5ba4882ba7761dc5a6af2"
+        },
+        {
+          "id": "thrown-doll",
+          "label": "Q 版投掷人偶",
+          "path": "characters/deepseek/thrown-doll.webp",
+          "width": 288,
+          "height": 144,
+          "layout": {
+            "columns": 2,
+            "rows": 1,
+            "frameWidth": 144,
+            "frameHeight": 144
+          },
+          "sequences": [
+            {
+              "id": "release",
+              "start": 0,
+              "count": 1
+            },
+            {
+              "id": "in-flight",
+              "start": 1,
+              "count": 1
+            }
+          ],
+          "source": "assets/art/boss-animation-doll-6074ef4.webp",
+          "sha256": "6074ef4f6ea650e02c8cd5473f06598df5eea77c3ed7d3b6b6852aa35966b2e2"
+        }
+      ]
+    },
+    {
+      "id": "gemini",
+      "name": "Gemini",
+      "rights": "ZipZipPipe-attribution-noncommercial",
+      "assets": [
+        {
+          "id": "portrait",
+          "label": "对话头像",
+          "path": "characters/gemini/portrait.webp",
+          "width": 311,
+          "height": 319,
+          "layout": {
+            "columns": 1,
+            "rows": 1,
+            "frameWidth": 311,
+            "frameHeight": 319
+          },
+          "source": "assets/art/cast-art-gemini-fe48169.webp",
+          "sha256": "fe48169f540b9dedf844215abf01c9652c87ff7956d6be4de91819501fa95633"
+        },
+        {
+          "id": "cast",
+          "label": "旅伴基础立绘",
+          "path": "characters/gemini/cast.webp",
+          "width": 228,
+          "height": 239,
+          "layout": {
+            "columns": 1,
+            "rows": 1,
+            "frameWidth": 228,
+            "frameHeight": 239
+          },
+          "source": "assets/art/cast-art-gemini-e400db3.webp",
+          "sha256": "e400db3b6ac0f35fb0852f6dd8e00a61515bce8ac2d39790ef210694e6bddbbc"
+        },
+        {
+          "id": "standing",
+          "label": "图鉴站姿",
+          "path": "characters/gemini/standing.webp",
+          "width": 187,
+          "height": 240,
+          "layout": {
+            "columns": 1,
+            "rows": 1,
+            "frameWidth": 187,
+            "frameHeight": 240
+          },
+          "source": "assets/art/cast-art-gemini-1fd4e38.webp",
+          "sha256": "1fd4e38a5ed550892f7ebc20bae408dc89267ff728dd3efcbad7bf6a1d64e255"
+        },
+        {
+          "id": "run",
+          "label": "跑步循环",
+          "path": "characters/gemini/run.webp",
+          "width": 2048,
+          "height": 200,
+          "layout": {
+            "columns": 8,
+            "rows": 1,
+            "frameWidth": 256,
+            "frameHeight": 200
+          },
+          "sequences": [
+            {
+              "id": "run",
+              "start": 0,
+              "count": 8
+            }
+          ],
+          "registration": {
+            "anchor": [
+              128,
+              184
+            ]
+          },
+          "source": "assets/art/run-animation-gemini-c53fa04.webp",
+          "sha256": "c53fa04c0824020cc4d4429fab845f8d6c0f854cf6b1cceb3b4a45b3cd0bbe9e"
+        },
+        {
+          "id": "seated",
+          "label": "划船与乘车",
+          "path": "characters/gemini/seated.webp",
+          "width": 1728,
+          "height": 144,
+          "layout": {
+            "columns": 9,
+            "rows": 1,
+            "frameWidth": 192,
+            "frameHeight": 144
+          },
+          "sequences": [
+            {
+              "id": "row",
+              "start": 0,
+              "count": 6
+            },
+            {
+              "id": "ride",
+              "start": 6,
+              "count": 3
+            }
+          ],
+          "registration": {
+            "anchor": [
+              88,
+              89
+            ],
+            "grips": [
+              {
+                "high": [
+                  130.4,
+                  59.03
+                ],
+                "low": [
+                  134.05,
+                  83.15
+                ]
+              },
+              {
+                "high": [
+                  128.93,
+                  56.84
+                ],
+                "low": [
+                  126.74,
+                  83.15
+                ]
+              },
+              {
+                "high": [
+                  128.2,
+                  60.49
+                ],
+                "low": [
+                  90.19,
+                  78.04
+                ]
+              },
+              {
+                "high": [
+                  131.13,
+                  48.8
+                ],
+                "low": [
+                  75.57,
+                  85.35
+                ]
+              },
+              {
+                "high": [
+                  112.85,
+                  54.64
+                ],
+                "low": [
+                  79.23,
+                  76.57
+                ]
+              },
+              {
+                "high": [
+                  124.55,
+                  59.03
+                ],
+                "low": [
+                  120.89,
+                  83.88
+                ]
+              },
+              null,
+              null,
+              null
+            ]
+          },
+          "usage": "ride 为乘客动作",
+          "source": "assets/art/seated-animation-src-0e33735.webp",
+          "sha256": "0e33735891c8207df73d5535df8123a1561803eb9923737e827597873bd15a5f"
+        },
+        {
+          "id": "battle",
+          "label": "首领战姿态",
+          "path": "characters/gemini/battle.webp",
+          "width": 864,
+          "height": 144,
+          "layout": {
+            "columns": 6,
+            "rows": 1,
+            "frameWidth": 144,
+            "frameHeight": 144
+          },
+          "usage": "战斗状态按招式选帧，非连续走帧动画；第 0 帧待机，第 5 帧用于破绽或落败。",
+          "source": "assets/art/boss-animation-gemini-b3a8e6c.webp",
+          "sha256": "b3a8e6c6868edf43c6dbfab2d7dc7cec25b5ca36fb6623ed2563693df5296b54"
+        },
+        {
+          "id": "hud-portrait",
+          "label": "小尺寸战斗头像",
+          "path": "characters/gemini/hud-portrait.webp",
+          "width": 42,
+          "height": 44,
+          "layout": {
+            "columns": 1,
+            "rows": 1,
+            "frameWidth": 42,
+            "frameHeight": 44
+          },
+          "source": "assets/art/interface-gemini-c74d93b.webp",
+          "sha256": "c74d93b734594c254dd301b7a43a5b5f5d3f78d28aaa15b23d96eac8b410f5e4"
+        },
+        {
+          "id": "walk",
+          "label": "走向宝箱",
+          "path": "characters/gemini/walk.webp",
+          "width": 1024,
+          "height": 200,
+          "layout": {
+            "columns": 4,
+            "rows": 1,
+            "frameWidth": 256,
+            "frameHeight": 200
+          },
+          "sequences": [
+            {
+              "id": "catWalk",
+              "start": 0,
+              "count": 4
+            }
+          ],
+          "registration": {
+            "anchor": [
+              128,
+              184
+            ]
+          },
+          "source": "assets/art/finish-animation-catwalk-ead2e89.webp",
+          "sha256": "ead2e899bdba52c1cd57e59b7834de8b15e94b328e01cff5e76cf7af1d8501a5"
+        },
+        {
+          "id": "cheer",
+          "label": "开箱欢呼",
+          "path": "characters/gemini/cheer.webp",
+          "width": 1024,
+          "height": 200,
+          "layout": {
+            "columns": 4,
+            "rows": 1,
+            "frameWidth": 256,
+            "frameHeight": 200
+          },
+          "sequences": [
+            {
+              "id": "cheer",
+              "start": 0,
+              "count": 4
+            }
+          ],
+          "registration": {
+            "anchor": [
+              128,
+              184
+            ]
+          },
+          "source": "assets/art/finish-animation-cheer-de55633.webp",
+          "sha256": "de55633910fd32d3909f8da397ac75e7c0d5ce169f22db98a5e675c5c55e029a"
+        },
+        {
+          "id": "actions",
+          "label": "跳跃、滑铲、失衡、起身",
+          "path": "characters/gemini/actions.webp",
+          "width": 1024,
+          "height": 200,
+          "layout": {
+            "columns": 4,
+            "rows": 1,
+            "frameWidth": 256,
+            "frameHeight": 200
+          },
+          "sequences": [
+            {
+              "id": "jump",
+              "start": 0,
+              "count": 1
+            },
+            {
+              "id": "slide",
+              "start": 1,
+              "count": 1
+            },
+            {
+              "id": "slip",
+              "start": 2,
+              "count": 1
+            },
+            {
+              "id": "recover",
+              "start": 3,
+              "count": 1
+            }
+          ],
+          "registration": {
+            "anchor": [
+              128,
+              184
+            ]
+          },
+          "source": "assets/art/run-animation-gemini-actions-e729e42.webp",
+          "sha256": "e729e42f4d289bba62f5614925287072ab43f8b4253fd66b7a4e0ffbbc1e6ee7"
+        },
+        {
+          "id": "arched-back",
+          "label": "弓背哈气",
+          "path": "characters/gemini/arched-back.webp",
+          "width": 108,
+          "height": 80,
+          "layout": {
+            "columns": 1,
+            "rows": 1,
+            "frameWidth": 108,
+            "frameHeight": 80
+          },
+          "source": "assets/art/gemini-boss-art-1-d0e1147.webp",
+          "sha256": "d0e11475af5bae9dec426a5e5d9ec0e9c6d5ca3925c1a57849ef7200b9088e15"
+        },
+        {
+          "id": "battle-idle",
+          "label": "战斗待机",
+          "path": "characters/gemini/battle-idle.webp",
+          "width": 69,
+          "height": 110,
+          "layout": {
+            "columns": 1,
+            "rows": 1,
+            "frameWidth": 69,
+            "frameHeight": 110
+          },
+          "source": "assets/art/gemini-boss-art-2-efed465.webp",
+          "sha256": "efed4653f7e74bde8798c9bf9c15ce6633443eee0ad3d9002d4e057cf1134739"
+        }
+      ]
+    },
+    {
+      "id": "claude",
+      "name": "Claude",
+      "rights": "ZipZipPipe-attribution-noncommercial",
+      "assets": [
+        {
+          "id": "portrait",
+          "label": "对话头像",
+          "path": "characters/claude/portrait.webp",
+          "width": 315,
+          "height": 308,
+          "layout": {
+            "columns": 1,
+            "rows": 1,
+            "frameWidth": 315,
+            "frameHeight": 308
+          },
+          "source": "assets/art/cast-art-claude-2c7913c.webp",
+          "sha256": "2c7913c1cbb75ff04389294081c2b169e36230a762dddb792658f6b9a58f6baf"
+        },
+        {
+          "id": "cast",
+          "label": "旅伴基础立绘",
+          "path": "characters/claude/cast.webp",
+          "width": 229,
+          "height": 233,
+          "layout": {
+            "columns": 1,
+            "rows": 1,
+            "frameWidth": 229,
+            "frameHeight": 233
+          },
+          "source": "assets/art/cast-art-claude-9702354.webp",
+          "sha256": "9702354055d23831f09d0d43901f5686b2ad099072f8dd46c709117b9f5d1c05"
+        },
+        {
+          "id": "standing",
+          "label": "图鉴站姿",
+          "path": "characters/claude/standing.webp",
+          "width": 200,
+          "height": 237,
+          "layout": {
+            "columns": 1,
+            "rows": 1,
+            "frameWidth": 200,
+            "frameHeight": 237
+          },
+          "source": "assets/art/cast-art-claude-48d77af.webp",
+          "sha256": "48d77af39ae65098e688a8103b919fbafd3c43dd0d7ee6288f9e1696f4d426a8"
+        },
+        {
+          "id": "run",
+          "label": "跑步循环",
+          "path": "characters/claude/run.webp",
+          "width": 2048,
+          "height": 200,
+          "layout": {
+            "columns": 8,
+            "rows": 1,
+            "frameWidth": 256,
+            "frameHeight": 200
+          },
+          "sequences": [
+            {
+              "id": "run",
+              "start": 0,
+              "count": 8
+            }
+          ],
+          "registration": {
+            "anchor": [
+              128,
+              184
+            ]
+          },
+          "source": "assets/art/run-animation-claude-297ddc1.webp",
+          "sha256": "297ddc19618ec6a3a9e05e3e0ab961108f26cc6d5974f6416bdcd85a63887184"
+        },
+        {
+          "id": "seated",
+          "label": "划船与乘车",
+          "path": "characters/claude/seated.webp",
+          "width": 1728,
+          "height": 144,
+          "layout": {
+            "columns": 9,
+            "rows": 1,
+            "frameWidth": 192,
+            "frameHeight": 144
+          },
+          "sequences": [
+            {
+              "id": "row",
+              "start": 0,
+              "count": 6
+            },
+            {
+              "id": "ride",
+              "start": 6,
+              "count": 3
+            }
+          ],
+          "registration": {
+            "anchor": [
+              88,
+              89
+            ],
+            "grips": [
+              {
+                "high": [
+                  128.52,
+                  48.48
+                ],
+                "low": [
+                  139.38,
+                  81.76
+                ]
+              },
+              {
+                "high": [
+                  132.14,
+                  48.48
+                ],
+                "low": [
+                  127.8,
+                  81.76
+                ]
+              },
+              {
+                "high": [
+                  127.8,
+                  52.82
+                ],
+                "low": [
+                  90.89,
+                  73.08
+                ]
+              },
+              {
+                "high": [
+                  128.52,
+                  39.07
+                ],
+                "low": [
+                  69.91,
+                  76.7
+                ]
+              },
+              {
+                "high": [
+                  109.71,
+                  44.86
+                ],
+                "low": [
+                  74.25,
+                  70.91
+                ]
+              },
+              {
+                "high": [
+                  122.73,
+                  49.2
+                ],
+                "low": [
+                  120.56,
+                  75.25
+                ]
+              },
+              null,
+              null,
+              null
+            ]
+          },
+          "usage": "ride 为乘客动作",
+          "source": "assets/art/seated-animation-src-22a90c2.webp",
+          "sha256": "22a90c28e0faf02d90063d71ace1ac6570bbf4a272c8515411630e7fba28fccf"
+        },
+        {
+          "id": "battle",
+          "label": "首领战姿态",
+          "path": "characters/claude/battle.webp",
+          "width": 864,
+          "height": 144,
+          "layout": {
+            "columns": 6,
+            "rows": 1,
+            "frameWidth": 144,
+            "frameHeight": 144
+          },
+          "usage": "战斗状态按招式选帧，非连续走帧动画；第 0 帧待机，第 5 帧用于破绽或落败。",
+          "source": "assets/art/boss-animation-claude-55c7d60.webp",
+          "sha256": "55c7d6033039f7f08bb83f1e067ca4467c25a1397150f58616bf136e9f6c6429"
+        },
+        {
+          "id": "hud-portrait",
+          "label": "小尺寸战斗头像",
+          "path": "characters/claude/hud-portrait.webp",
+          "width": 44,
+          "height": 43,
+          "layout": {
+            "columns": 1,
+            "rows": 1,
+            "frameWidth": 44,
+            "frameHeight": 43
+          },
+          "source": "assets/art/interface-claude-8500bf0.webp",
+          "sha256": "8500bf00eb2f20de2866989106ee9731c77a346a7f6a6400ab62bf2507db7703"
+        }
+      ]
+    },
+    {
+      "id": "grok",
+      "name": "Grok",
+      "rights": "ZipZipPipe-attribution-noncommercial",
+      "assets": [
+        {
+          "id": "portrait",
+          "label": "对话头像",
+          "path": "characters/grok/portrait.webp",
+          "width": 320,
+          "height": 308,
+          "layout": {
+            "columns": 1,
+            "rows": 1,
+            "frameWidth": 320,
+            "frameHeight": 308
+          },
+          "source": "assets/art/cast-art-grok-803a329.webp",
+          "sha256": "803a32909d9321ae52a8713b5ad42977d8c82d7be476d7fca89b9fd9e8470f02"
+        },
+        {
+          "id": "cast",
+          "label": "旅伴基础立绘",
+          "path": "characters/grok/cast.webp",
+          "width": 230,
+          "height": 243,
+          "layout": {
+            "columns": 1,
+            "rows": 1,
+            "frameWidth": 230,
+            "frameHeight": 243
+          },
+          "source": "assets/art/cast-art-grok-4292668.webp",
+          "sha256": "42926680f48250f79c74220bd6e3f88b51da716865fa125518ad5f09e08b8ae1"
+        },
+        {
+          "id": "standing",
+          "label": "图鉴站姿",
+          "path": "characters/grok/standing.webp",
+          "width": 204,
+          "height": 239,
+          "layout": {
+            "columns": 1,
+            "rows": 1,
+            "frameWidth": 204,
+            "frameHeight": 239
+          },
+          "source": "assets/art/cast-art-grok-da67556.webp",
+          "sha256": "da675561b3a11e7c5a20381babe98133aba03016c4604448db140ca3de72d400"
+        },
+        {
+          "id": "run",
+          "label": "跑步循环",
+          "path": "characters/grok/run.webp",
+          "width": 2048,
+          "height": 200,
+          "layout": {
+            "columns": 8,
+            "rows": 1,
+            "frameWidth": 256,
+            "frameHeight": 200
+          },
+          "sequences": [
+            {
+              "id": "run",
+              "start": 0,
+              "count": 8
+            }
+          ],
+          "registration": {
+            "anchor": [
+              128,
+              184
+            ]
+          },
+          "source": "assets/art/run-animation-grok-3d485f8.webp",
+          "sha256": "3d485f843d9550f3a502049016e74492fb17d13b7738b510d93f2daa10d127ee"
+        },
+        {
+          "id": "seated",
+          "label": "划船与乘车",
+          "path": "characters/grok/seated.webp",
+          "width": 1344,
+          "height": 144,
+          "layout": {
+            "columns": 7,
+            "rows": 1,
+            "frameWidth": 192,
+            "frameHeight": 144
+          },
+          "sequences": [
+            {
+              "id": "row",
+              "start": 0,
+              "count": 4
+            },
+            {
+              "id": "ride",
+              "start": 4,
+              "count": 3
+            }
+          ],
+          "registration": {
+            "anchor": [
+              88,
+              89
+            ],
+            "grips": [
+              {
+                "high": [
+                  99.16,
+                  49.95
+                ],
+                "low": [
+                  134.05,
+                  74.99
+                ]
+              },
+              {
+                "high": [
+                  120.69,
+                  68.63
+                ],
+                "low": [
+                  118.62,
+                  85.37
+                ]
+              },
+              {
+                "high": [
+                  115.63,
+                  49.17
+                ],
+                "low": [
+                  80.48,
+                  78.49
+                ]
+              },
+              {
+                "high": [
+                  121.47,
+                  46.32
+                ],
+                "low": [
+                  108.89,
+                  56.31
+                ]
+              },
+              null,
+              null,
+              null
+            ]
+          },
+          "usage": "ride 为乘客动作",
+          "source": "assets/art/seated-animation-src-6476089.webp",
+          "sha256": "64760891b9fe07154ea9936c834e44e3f80da33d1e2f74f1db2bd8e6f5e5725c"
+        },
+        {
+          "id": "battle",
+          "label": "首领战姿态",
+          "path": "characters/grok/battle.webp",
+          "width": 864,
+          "height": 144,
+          "layout": {
+            "columns": 6,
+            "rows": 1,
+            "frameWidth": 144,
+            "frameHeight": 144
+          },
+          "usage": "战斗状态按招式选帧，非连续走帧动画；第 0 帧待机，第 5 帧用于破绽或落败。",
+          "source": "assets/art/boss-animation-grok-6008262.webp",
+          "sha256": "60082624585115ab66315f481658e013ff3a9ade4a6fcb46c63004e222375e8e"
+        },
+        {
+          "id": "hud-portrait",
+          "label": "小尺寸战斗头像",
+          "path": "characters/grok/hud-portrait.webp",
+          "width": 44,
+          "height": 42,
+          "layout": {
+            "columns": 1,
+            "rows": 1,
+            "frameWidth": 44,
+            "frameHeight": 42
+          },
+          "source": "assets/art/interface-grok-2498c38.webp",
+          "sha256": "2498c38b21e4800eb6a75818fd4199d6614ce4a6df122c669b45a2e15c953d05"
+        }
+      ]
+    },
+    {
+      "id": "glm",
+      "name": "GLM",
+      "rights": "ZipZipPipe-attribution-noncommercial",
+      "assets": [
+        {
+          "id": "portrait",
+          "label": "对话头像",
+          "path": "characters/glm/portrait.webp",
+          "width": 316,
+          "height": 271,
+          "layout": {
+            "columns": 1,
+            "rows": 1,
+            "frameWidth": 316,
+            "frameHeight": 271
+          },
+          "source": "assets/art/cast-art-glm-c0b9931.webp",
+          "sha256": "c0b9931815480d4c670cb00bd5b1d15f3beb54efc85638a8cd80b64b243e8a09"
+        },
+        {
+          "id": "cast",
+          "label": "旅伴基础立绘",
+          "path": "characters/glm/cast.webp",
+          "width": 215,
+          "height": 255,
+          "layout": {
+            "columns": 1,
+            "rows": 1,
+            "frameWidth": 215,
+            "frameHeight": 255
+          },
+          "usage": "同时用作图鉴站姿",
+          "source": "assets/art/cast-art-glm-83c12bb.webp",
+          "sha256": "83c12bbe53622a7821effffadc3860c9f541e6d45cb8cf13d600cf12c5af8ef8"
+        },
+        {
+          "id": "run",
+          "label": "跑步循环",
+          "path": "characters/glm/run.webp",
+          "width": 2048,
+          "height": 200,
+          "layout": {
+            "columns": 8,
+            "rows": 1,
+            "frameWidth": 256,
+            "frameHeight": 200
+          },
+          "sequences": [
+            {
+              "id": "run",
+              "start": 0,
+              "count": 8
+            }
+          ],
+          "registration": {
+            "anchor": [
+              128,
+              184
+            ]
+          },
+          "source": "assets/art/run-animation-glm-6202d86.webp",
+          "sha256": "6202d86488421e7d1028b7a9c13d4e8cf900030f74cf47432aa667c058efb05d"
+        },
+        {
+          "id": "seated",
+          "label": "划船与乘车",
+          "path": "characters/glm/seated.webp",
+          "width": 1344,
+          "height": 144,
+          "layout": {
+            "columns": 7,
+            "rows": 1,
+            "frameWidth": 192,
+            "frameHeight": 144
+          },
+          "sequences": [
+            {
+              "id": "row",
+              "start": 0,
+              "count": 4
+            },
+            {
+              "id": "ride",
+              "start": 4,
+              "count": 3
+            }
+          ],
+          "registration": {
+            "anchor": [
+              88,
+              89
+            ],
+            "grips": [
+              {
+                "high": [
+                  94.22,
+                  50.87
+                ],
+                "low": [
+                  126.54,
+                  69.94
+                ]
+              },
+              {
+                "high": [
+                  111.8,
+                  63.17
+                ],
+                "low": [
+                  115.45,
+                  82.51
+                ]
+              },
+              {
+                "high": [
+                  108.96,
+                  48.3
+                ],
+                "low": [
+                  74.34,
+                  75.75
+                ]
+              },
+              {
+                "high": [
+                  115.99,
+                  46.81
+                ],
+                "low": [
+                  107.06,
+                  63.31
+                ]
+              },
+              null,
+              null,
+              null
+            ]
+          },
+          "usage": "ride 为乘客动作",
+          "source": "assets/art/seated-animation-src-aa47045.webp",
+          "sha256": "aa4704505c22c0a0c3a2b618ff7dfe6a2d3ca358f306bda45a01670e80245f75"
+        },
+        {
+          "id": "battle",
+          "label": "首领战姿态",
+          "path": "characters/glm/battle.webp",
+          "width": 864,
+          "height": 144,
+          "layout": {
+            "columns": 6,
+            "rows": 1,
+            "frameWidth": 144,
+            "frameHeight": 144
+          },
+          "usage": "战斗状态按招式选帧，非连续走帧动画；第 0 帧待机，第 5 帧用于破绽或落败。",
+          "source": "assets/art/boss-animation-glm-d28f408.webp",
+          "sha256": "d28f408f76d571c473f9f08bc1fecbdbbebb025316aae0d4eeac9a07e2f5f4fa"
+        },
+        {
+          "id": "hud-portrait",
+          "label": "小尺寸战斗头像",
+          "path": "characters/glm/hud-portrait.webp",
+          "width": 44,
+          "height": 38,
+          "layout": {
+            "columns": 1,
+            "rows": 1,
+            "frameWidth": 44,
+            "frameHeight": 38
+          },
+          "source": "assets/art/interface-glm-0ddd5c3.webp",
+          "sha256": "0ddd5c37e7572ed04aba4a4c7d812683d185b3cde2e1ae1707bacb5ec9e59283"
+        }
+      ]
+    },
+    {
+      "id": "kimi",
+      "name": "Kimi",
+      "rights": "ZipZipPipe-attribution-noncommercial",
+      "assets": [
+        {
+          "id": "portrait",
+          "label": "对话头像",
+          "path": "characters/kimi/portrait.webp",
+          "width": 317,
+          "height": 308,
+          "layout": {
+            "columns": 1,
+            "rows": 1,
+            "frameWidth": 317,
+            "frameHeight": 308
+          },
+          "source": "assets/art/cast-art-kimi-5300548.webp",
+          "sha256": "530054856ae8db9978c58d1da259ff69c76f692bc02700284790f055d3210e33"
+        },
+        {
+          "id": "cast",
+          "label": "旅伴基础立绘",
+          "path": "characters/kimi/cast.webp",
+          "width": 225,
+          "height": 238,
+          "layout": {
+            "columns": 1,
+            "rows": 1,
+            "frameWidth": 225,
+            "frameHeight": 238
+          },
+          "source": "assets/art/cast-art-kimi-fc56927.webp",
+          "sha256": "fc56927a0c9706138108e6237ace44f1a2a026f1cfbc9687c0bd0641d23b44da"
+        },
+        {
+          "id": "standing",
+          "label": "图鉴站姿",
+          "path": "characters/kimi/standing.webp",
+          "width": 185,
+          "height": 245,
+          "layout": {
+            "columns": 1,
+            "rows": 1,
+            "frameWidth": 185,
+            "frameHeight": 245
+          },
+          "source": "assets/art/cast-art-kimi-76e818f.webp",
+          "sha256": "76e818f1e9b5a6d36ccf526a1f3914a4107f4e519f084eb90152793d93c815fa"
+        },
+        {
+          "id": "run",
+          "label": "跑步循环",
+          "path": "characters/kimi/run.webp",
+          "width": 2048,
+          "height": 200,
+          "layout": {
+            "columns": 8,
+            "rows": 1,
+            "frameWidth": 256,
+            "frameHeight": 200
+          },
+          "sequences": [
+            {
+              "id": "run",
+              "start": 0,
+              "count": 8
+            }
+          ],
+          "registration": {
+            "anchor": [
+              128,
+              184
+            ]
+          },
+          "source": "assets/art/run-animation-kimi-551b422.webp",
+          "sha256": "551b422c18d40b9b9ce81ab78d225b9afba7020e71ab2715da3157aef4706c91"
+        },
+        {
+          "id": "seated",
+          "label": "划船与乘车",
+          "path": "characters/kimi/seated.webp",
+          "width": 1344,
+          "height": 144,
+          "layout": {
+            "columns": 7,
+            "rows": 1,
+            "frameWidth": 192,
+            "frameHeight": 144
+          },
+          "sequences": [
+            {
+              "id": "row",
+              "start": 0,
+              "count": 4
+            },
+            {
+              "id": "ride",
+              "start": 4,
+              "count": 3
+            }
+          ],
+          "registration": {
+            "anchor": [
+              88,
+              89
+            ],
+            "grips": [
+              {
+                "high": [
+                  99.7,
+                  54.67
+                ],
+                "low": [
+                  134.03,
+                  75.76
+                ]
+              },
+              {
+                "high": [
+                  120.53,
+                  64.31
+                ],
+                "low": [
+                  124.9,
+                  83.47
+                ]
+              },
+              {
+                "high": [
+                  119.11,
+                  49.27
+                ],
+                "low": [
+                  92.5,
+                  73.83
+                ]
+              },
+              {
+                "high": [
+                  121.94,
+                  45.41
+                ],
+                "low": [
+                  108.57,
+                  62.26
+                ]
+              },
+              null,
+              null,
+              null
+            ]
+          },
+          "usage": "ride 为乘客动作",
+          "source": "assets/art/seated-animation-src-20c470f.webp",
+          "sha256": "20c470f67590d9585a5d175665ea9053dc8928ed9ff8437f9a342beff9d32ee9"
+        },
+        {
+          "id": "battle",
+          "label": "首领战姿态",
+          "path": "characters/kimi/battle.webp",
+          "width": 864,
+          "height": 144,
+          "layout": {
+            "columns": 6,
+            "rows": 1,
+            "frameWidth": 144,
+            "frameHeight": 144
+          },
+          "usage": "战斗状态按招式选帧，非连续走帧动画；第 0 帧待机，第 5 帧用于破绽或落败。",
+          "source": "assets/art/boss-animation-kimi-200baa6.webp",
+          "sha256": "200baa6a395cdb66316a057ca21abc5bd4f4de4dfc72eac1e77b6129000c77b7"
+        },
+        {
+          "id": "hud-portrait",
+          "label": "小尺寸战斗头像",
+          "path": "characters/kimi/hud-portrait.webp",
+          "width": 44,
+          "height": 43,
+          "layout": {
+            "columns": 1,
+            "rows": 1,
+            "frameWidth": 44,
+            "frameHeight": 43
+          },
+          "source": "assets/art/interface-kimi-26e6e75.webp",
+          "sha256": "26e6e750ab0aad4080e1ff1f9d132ad69de95a15ee0e74eb5d12fd139dfdd686"
+        }
+      ]
+    },
+    {
+      "id": "minimax",
+      "name": "MiniMax",
+      "rights": "ZipZipPipe-attribution-noncommercial",
+      "assets": [
+        {
+          "id": "portrait",
+          "label": "对话头像",
+          "path": "characters/minimax/portrait.webp",
+          "width": 311,
+          "height": 309,
+          "layout": {
+            "columns": 1,
+            "rows": 1,
+            "frameWidth": 311,
+            "frameHeight": 309
+          },
+          "source": "assets/art/cast-art-minimax-e9328f6.webp",
+          "sha256": "e9328f621ccc1ed20eb2efde14f18334d13c9b265042cb863d5cf960b9a147bf"
+        },
+        {
+          "id": "cast",
+          "label": "旅伴基础立绘",
+          "path": "characters/minimax/cast.webp",
+          "width": 197,
+          "height": 239,
+          "layout": {
+            "columns": 1,
+            "rows": 1,
+            "frameWidth": 197,
+            "frameHeight": 239
+          },
+          "source": "assets/art/cast-art-minimax-843882a.webp",
+          "sha256": "843882af49f56a06ddccd9f7b0c8dd0719a8ca2fbaf563d5afa8de84bf0a11ea"
+        },
+        {
+          "id": "standing",
+          "label": "图鉴站姿",
+          "path": "characters/minimax/standing.webp",
+          "width": 151,
+          "height": 247,
+          "layout": {
+            "columns": 1,
+            "rows": 1,
+            "frameWidth": 151,
+            "frameHeight": 247
+          },
+          "source": "assets/art/cast-art-minimax-705fa8a.webp",
+          "sha256": "705fa8a20986d1d295b40d8331859ded78c9f16c72752f34c12527952e17fabb"
+        },
+        {
+          "id": "run",
+          "label": "跑步循环",
+          "path": "characters/minimax/run.webp",
+          "width": 2048,
+          "height": 200,
+          "layout": {
+            "columns": 8,
+            "rows": 1,
+            "frameWidth": 256,
+            "frameHeight": 200
+          },
+          "sequences": [
+            {
+              "id": "run",
+              "start": 0,
+              "count": 8
+            }
+          ],
+          "registration": {
+            "anchor": [
+              128,
+              184
+            ]
+          },
+          "source": "assets/art/run-animation-minimax-892736e.webp",
+          "sha256": "892736e2d272afcc576152f71aebae590b40e8a1e2709598351c435d712fcc6f"
+        },
+        {
+          "id": "seated",
+          "label": "划船与乘车",
+          "path": "characters/minimax/seated.webp",
+          "width": 1344,
+          "height": 144,
+          "layout": {
+            "columns": 7,
+            "rows": 1,
+            "frameWidth": 192,
+            "frameHeight": 144
+          },
+          "sequences": [
+            {
+              "id": "row",
+              "start": 0,
+              "count": 4
+            },
+            {
+              "id": "ride",
+              "start": 4,
+              "count": 3
+            }
+          ],
+          "registration": {
+            "anchor": [
+              88,
+              89
+            ],
+            "grips": [
+              {
+                "high": [
+                  85.43,
+                  53.85
+                ],
+                "low": [
+                  124.91,
+                  75.34
+                ]
+              },
+              {
+                "high": [
+                  111.39,
+                  68.58
+                ],
+                "low": [
+                  118.56,
+                  86.03
+                ]
+              },
+              {
+                "high": [
+                  116.26,
+                  53.3
+                ],
+                "low": [
+                  77.59,
+                  78.59
+                ]
+              },
+              {
+                "high": [
+                  118.83,
+                  52.49
+                ],
+                "low": [
+                  100.17,
+                  61.55
+                ]
+              },
+              null,
+              null,
+              null
+            ]
+          },
+          "usage": "ride 为乘客动作",
+          "source": "assets/art/seated-animation-src-b18fbcd.webp",
+          "sha256": "b18fbcd7ed7a64b2f55966f76b7e72ead3ef95c59176dee8b4c33028aadfe60c"
+        },
+        {
+          "id": "battle",
+          "label": "首领战姿态",
+          "path": "characters/minimax/battle.webp",
+          "width": 864,
+          "height": 144,
+          "layout": {
+            "columns": 6,
+            "rows": 1,
+            "frameWidth": 144,
+            "frameHeight": 144
+          },
+          "usage": "战斗状态按招式选帧，非连续走帧动画；第 0 帧待机，第 5 帧用于破绽或落败。",
+          "source": "assets/art/boss-animation-minimax-39c7ac1.webp",
+          "sha256": "39c7ac175917685b2869f2d2d8335cf7a1f3fea9804e3eb65c42fad3918dd59d"
+        },
+        {
+          "id": "hud-portrait",
+          "label": "小尺寸战斗头像",
+          "path": "characters/minimax/hud-portrait.webp",
+          "width": 44,
+          "height": 43,
+          "layout": {
+            "columns": 1,
+            "rows": 1,
+            "frameWidth": 44,
+            "frameHeight": 43
+          },
+          "source": "assets/art/interface-minimax-39aa623.webp",
+          "sha256": "39aa62347921058c2402344adb69bd59485448a7b7f9988b013e788a7312677a"
+        }
+      ]
+    },
+    {
+      "id": "qwen",
+      "name": "Qwen",
+      "rights": "ZipZipPipe-attribution-noncommercial",
+      "assets": [
+        {
+          "id": "portrait",
+          "label": "对话头像",
+          "path": "characters/qwen/portrait.webp",
+          "width": 317,
+          "height": 315,
+          "layout": {
+            "columns": 1,
+            "rows": 1,
+            "frameWidth": 317,
+            "frameHeight": 315
+          },
+          "source": "assets/art/cast-art-qwen-ea93e70.webp",
+          "sha256": "ea93e70d2142317f9223134f831d271936452671fd12fe08641cd04919109fd5"
+        },
+        {
+          "id": "cast",
+          "label": "旅伴基础立绘",
+          "path": "characters/qwen/cast.webp",
+          "width": 247,
+          "height": 240,
+          "layout": {
+            "columns": 1,
+            "rows": 1,
+            "frameWidth": 247,
+            "frameHeight": 240
+          },
+          "source": "assets/art/cast-art-qwen-89abd02.webp",
+          "sha256": "89abd026ae2e8e5c93ca12658282fef0646ba940440ae1007298e691342d73c1"
+        },
+        {
+          "id": "standing",
+          "label": "图鉴站姿",
+          "path": "characters/qwen/standing.webp",
+          "width": 193,
+          "height": 248,
+          "layout": {
+            "columns": 1,
+            "rows": 1,
+            "frameWidth": 193,
+            "frameHeight": 248
+          },
+          "source": "assets/art/cast-art-qwen-e364c80.webp",
+          "sha256": "e364c8013cc1b0c0d65b1232369f4b2972764826025c508aee1627c99421edda"
+        },
+        {
+          "id": "run",
+          "label": "跑步循环",
+          "path": "characters/qwen/run.webp",
+          "width": 2048,
+          "height": 200,
+          "layout": {
+            "columns": 8,
+            "rows": 1,
+            "frameWidth": 256,
+            "frameHeight": 200
+          },
+          "sequences": [
+            {
+              "id": "run",
+              "start": 0,
+              "count": 8
+            }
+          ],
+          "registration": {
+            "anchor": [
+              128,
+              184
+            ]
+          },
+          "source": "assets/art/run-animation-qwen-71587c4.webp",
+          "sha256": "71587c4faf99137f6de3e2a34f982bc6dd64ed18c2e02475fce50cf08120699d"
+        },
+        {
+          "id": "seated",
+          "label": "划船与乘车",
+          "path": "characters/qwen/seated.webp",
+          "width": 1344,
+          "height": 144,
+          "layout": {
+            "columns": 7,
+            "rows": 1,
+            "frameWidth": 192,
+            "frameHeight": 144
+          },
+          "sequences": [
+            {
+              "id": "row",
+              "start": 0,
+              "count": 4
+            },
+            {
+              "id": "ride",
+              "start": 4,
+              "count": 3
+            }
+          ],
+          "registration": {
+            "anchor": [
+              88,
+              89
+            ],
+            "grips": [
+              {
+                "high": [
+                  101.7,
+                  53.16
+                ],
+                "low": [
+                  136.38,
+                  77.35
+                ]
+              },
+              {
+                "high": [
+                  132.8,
+                  65.83
+                ],
+                "low": [
+                  125.76,
+                  87.46
+                ]
+              },
+              {
+                "high": [
+                  118.34,
+                  52.52
+                ],
+                "low": [
+                  87.62,
+                  77.48
+                ]
+              },
+              {
+                "high": [
+                  126.4,
+                  50.09
+                ],
+                "low": [
+                  107.07,
+                  58.41
+                ]
+              },
+              null,
+              null,
+              null
+            ]
+          },
+          "usage": "ride 为乘客动作",
+          "source": "assets/art/seated-animation-src-300cb8b.webp",
+          "sha256": "300cb8beabc21c34f858b5516da65c7c3e0a3c81b210261af1cb9affca7a8d09"
+        },
+        {
+          "id": "battle",
+          "label": "首领战姿态",
+          "path": "characters/qwen/battle.webp",
+          "width": 864,
+          "height": 144,
+          "layout": {
+            "columns": 6,
+            "rows": 1,
+            "frameWidth": 144,
+            "frameHeight": 144
+          },
+          "usage": "战斗状态按招式选帧，非连续走帧动画；第 0 帧待机，第 5 帧用于破绽或落败。",
+          "source": "assets/art/boss-animation-qwen-8d7c17a.webp",
+          "sha256": "8d7c17a7cc7a862f70298c0c24e127c2ec058f6ebe7752c55116ef16d9d56ee1"
+        },
+        {
+          "id": "hud-portrait",
+          "label": "小尺寸战斗头像",
+          "path": "characters/qwen/hud-portrait.webp",
+          "width": 44,
+          "height": 43,
+          "layout": {
+            "columns": 1,
+            "rows": 1,
+            "frameWidth": 44,
+            "frameHeight": 43
+          },
+          "source": "assets/art/interface-qwen-6a9cddd.webp",
+          "sha256": "6a9cdddf82d7efe698c11b4ce7e8a897273a5ebe310e5fbce0bcdf8eea0bc3fe"
+        }
+      ]
+    }
+  ]
+}
