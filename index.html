@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f6ef">
+  <title>AI 娘像素素材库</title>
+  <link rel="stylesheet" href="gallery.css">
+  <script src="gallery.js" defer></script>
+</head>
+<body>
+  <header class="mast">
+    <a class="wordmark" href="https://github.com/waiteddegree608-ship-it/cet6-translation-runner"><span class="pixel" aria-hidden="true">✦</span> 六级翻译智能背记</a>
+    <nav><a href="https://github.com/waiteddegree608-ship-it/ai-girls-pixel-assets/blob/main/CREDITS.md">素材署名</a><a href="https://github.com/waiteddegree608-ship-it/ai-girls-pixel-assets">GitHub ↗</a></nav>
+  </header>
+  <main>
+    <div class="title-row">
+      <h1>AI 娘像素素材库</h1>
+      <a class="download-all" href="https://github.com/waiteddegree608-ship-it/ai-girls-pixel-assets/releases/latest/download/ai-girls-pixel-assets.zip">下载整套素材 ↓</a>
+    </div>
+    <nav id="cast" aria-label="选择角色"></nav>
+    <p id="status" role="status">正在读取素材目录…</p>
+    <div id="workspace" hidden>
+      <article>
+        <div class="stage">
+          <div class="stage-bar"><span class="stage-char" id="stage-char"></span><div class="controls"><select id="clip" aria-label="选择动作或查看原图" hidden></select><button type="button" id="mode" hidden></button></div></div>
+          <canvas id="frame" hidden aria-label="动作预览"></canvas>
+          <img id="sheet" alt="" hidden>
+        </div>
+        <div class="caption">
+          <div><h2 id="asset-title"></h2><span id="dimensions"></span></div>
+          <a id="original" download>下载原图 ↓</a>
+        </div>
+      </article>
+      <aside>
+        <div class="list-heading"><h2>角色素材</h2><a id="pack">角色包 ↓</a></div>
+        <div id="files" aria-label="选择素材"></div>
+        <p id="terms"></p>
+      </aside>
+    </div>
+  </main>
+</body>
+</html>
