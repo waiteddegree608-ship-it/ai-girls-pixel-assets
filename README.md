@@ -1,6 +1,6 @@
 # AI 娘像素素材库
 
-《六级翻译智能背记》的九位旅伴，共 76 张透明 WebP。包含头像、立绘、跑步循环、划船和乘车动作，也收录了 GPT 开箱、Gemini 弓背蓄势、DeepSeek 投掷 Q 版分身等游戏专用画面。
+《CET 6 Astra》的九位旅伴，共 76 张透明 WebP。包含头像、立绘、跑步循环、划船和乘车动作，也收录了 GPT 开箱、Gemini 弓背蓄势、DeepSeek 投掷 Q 版分身等游戏专用画面。
 
 **[打开在线素材库](https://waiteddegree608-ship-it.github.io/ai-girls-pixel-assets/)** · **[下载全量 ZIP](https://github.com/waiteddegree608-ship-it/ai-girls-pixel-assets/releases/latest/download/ai-girls-pixel-assets.zip)** · [署名与使用条件](CREDITS.md)
 
@@ -34,4 +34,4 @@
 
 ## 维护素材库
 
-在仓库根目录运行 `python scripts/package.py` 可校验图片并在 `dist/` 重新生成全量包和各角色包。运行 `python -m http.server 8000` 后可在浏览器访问本地预览页。素材来自[原游戏 v1.0.0](https://github.com/waiteddegree608-ship-it/cet6-translation-runner/tree/v1.0.0)，原文件位置和 SHA-256 随条目记录。
+在仓库根目录运行 `python scripts/package.py` 可校验图片并在 `dist/` 重新生成全量包和各角色包。运行 `python -m http.server 8000` 后可在浏览器访问本地预览页。素材来自[原游戏 v1.0.0](https://github.com/waiteddegree608-ship-it/CET-6-Astra/tree/v1.0.0)，原文件位置和 SHA-256 随条目记录。

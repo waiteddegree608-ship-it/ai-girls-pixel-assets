@@ -1,7 +1,7 @@
 {
   "version": 1,
   "source": {
-    "repository": "https://github.com/waiteddegree608-ship-it/cet6-translation-runner",
+    "repository": "https://github.com/waiteddegree608-ship-it/CET-6-Astra",
     "revision": "69713d795851ccf9b813a908f5f219e1ed9267f1"
   },
   "coordinates": "像素坐标从单帧左上角起算。帧编号从 0 开始，逐行从左往右。sequences 的 start 和 count 分别为起始帧和帧数。registration.anchor 是绘制时的定位点；seated 中的 grips 按帧给出前后两个握持点，空值表示该帧没有握点。",
